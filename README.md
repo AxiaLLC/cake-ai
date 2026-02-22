@@ -12,7 +12,7 @@
 
 ## Start Here
 
-Copy the text below and paste it into any free AI chatbot — [ChatGPT](https://chatgpt.com), [Gemini](https://gemini.google.com), or [Claude](https://claude.ai):
+Copy the text below and paste it into [ChatGPT](https://chatgpt.com) or [Claude](https://claude.ai) (free accounts work). Gemini's chat cannot reliably read web pages, so use one of the others for this step — you'll still use Gemini as your free AI provider once we're in the IDE.
 
 ```
 I want to learn how to use AI properly. I have no technical experience.
