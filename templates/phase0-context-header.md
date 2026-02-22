@@ -36,11 +36,13 @@ ide: [VS Code / other / none]
 steps:
   - [x] Figure out my system
   - [x] Download and install VS Code
+  - [ ] Open a project folder in VS Code
   - [ ] Install Node.js
   - [ ] Get a free Gemini API key
   - [ ] Install the Cline extension in VS Code
   - [ ] Connect Cline to Gemini
   - [ ] Run the Cake setup command
+  - [ ] Activate Cake in the IDE
 notes: "[any issues, errors, or context from previous session]"
 ---
 ```
