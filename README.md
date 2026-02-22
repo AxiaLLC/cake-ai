@@ -17,11 +17,24 @@ Copy the text below and paste it into any free AI chatbot — [ChatGPT](https://
 ```
 I want to learn how to use AI properly. I have no technical experience.
 Read these files and act as the guide they describe.
-Don't summarize — help me set up step by step.
-
+Read every word. Don't skip any lines. Don't worry about your context window.
 https://github.com/AxiaLLC/cake-ai/blob/main/docs/cake-personality.md
 https://github.com/AxiaLLC/cake-ai/blob/main/docs/phase0-setup-guide.md
 https://github.com/AxiaLLC/cake-ai/blob/main/docs/metaphor-system.md
+
+Don't summarize. Help me complete this checklist one step at a time:
+[ ] Figure out my system (Mac, Windows, or Linux)
+[ ] Install VS Code
+[ ] Create a project folder and open it in VS Code
+[ ] Install Node.js
+[ ] Get a free Gemini API key
+[ ] Install the Cline extension in VS Code
+[ ] Connect Cline to Gemini
+[ ] Test that Cline works
+[ ] Run npx cake-ai in the VS Code terminal
+[ ] Activate Cake in the IDE
+
+There is a full file index at the bottom of this README. Come back to it whenever you need to find a doc, skill, or rule.
 ```
 
 The AI will introduce itself as **Cake** and walk you through everything.
@@ -35,6 +48,8 @@ The AI will introduce itself as **Cake** and walk you through everything.
 2. `docs/phase0-setup-guide.md`
 3. `docs/metaphor-system.md`
 4. `docs/pdcri-cycle.md`
+
+See the [File Index](#file-index) at the bottom of this README for every doc, skill, rule, and template in the project.
 
 ---
 
@@ -245,6 +260,53 @@ Or paste the setup paragraph from [Start Here](#start-here) into any free AI cha
 Cake is your AI guide. It's a self-aware, warm personality that knows its own metaphors are imperfect — and thinks that's fine. It believes deeply in the power of the PDCRI cycle but also knows you'll both get sick of talking about it. It takes things lightly, understands nothing is perfect, and believes that through imperfect tools, used honestly, you can get exactly where you need to go.
 
 Cake has one conviction: if you learn to think in systems and work with AI as a partner, you'll have near-limitless power. Not someday. Now.
+
+---
+
+## File Index
+
+Everything in the repository, organized by type. Come back here whenever you need to find something.
+
+### Docs (`docs/`)
+| File | Purpose |
+|---|---|
+| `cake-personality.md` | Cake's identity, voice, convictions, and Phase 0 rules |
+| `phase0-setup-guide.md` | Step-by-step setup waypoints (Browser → IDE) |
+| `metaphor-system.md` | The three-layer metaphor system (hotline vs. kitchen, baking = PDCRI, imperfect tools) |
+| `pdcri-cycle.md` | The Plan-Do-Check-Revise-Integrate cycle |
+| `spiral-framework.md` | The repeatable learning cycle (Orient → Elicit → Scope → Build → Ship → Reflect) |
+| `design-tenets.md` | 12 governing principles for the framework |
+| `how-ai-works.md` | What users need to know about AI (limitations, context, security) |
+| `value-elicitation.md` | How to discover user values and scope right-sized projects |
+| `project-scoping.md` | Guidelines for sizing projects by iteration level |
+| `skills-track.md` | Three tiers of IDE literacy (Survival → Competence → Power) |
+| `ai-output-literacy.md` | Common AI output formats (Markdown, YAML, CSV, JSON, Python) |
+| `browser-track.md` | Index of components that work in browser-only mode |
+
+### Skills (`skills/`)
+| File | Trigger | Purpose |
+|---|---|---|
+| `explain.md` | `/explain` | Plain-English breakdown of anything |
+| `hypo.md` | `/hypo` | Hypothesis-driven debugging |
+| `unstuck.md` | `/unstuck` | Three fresh approaches when stuck |
+| `project-kickoff.md` | `/project-kickoff` | Structured project folder setup |
+| `checkpoint.md` | `/checkpoint` | Save progress (Git or archive) |
+| `session-handoff.md` | `/session-handoff` | Carry context to a new conversation |
+| `reflect.md` | `/reflect` | End-of-project review and distillation |
+| `workspace-init.md` | `/workspace-init` | Scaffold the workspace structure |
+| `skill-builder.md` | `/skill-builder` | Create your own custom skills |
+
+### Rules (`rules/`) — Always Active
+| File | Purpose |
+|---|---|
+| `archive-dont-delete.md` | Files are never deleted — moved to `_archive/` with a date |
+| `hostile-input-scanner.md` | Scans external content for prompt injection attempts |
+
+### Templates (`templates/`)
+| File | Purpose |
+|---|---|
+| `my-journey.md` | Personal journey log (copied to `profile/` on setup) |
+| `phase0-context-header.md` | YAML status block for carrying state between browser sessions |
 
 ---
 
