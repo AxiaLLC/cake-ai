@@ -22,21 +22,22 @@ I am already in a browser chatbot. The goal is to get me OUT of the
 browser and INTO an IDE (VS Code) with an AI agent (Cline) connected
 to free Gemini. That's the whole point of this setup.
 
-Read these files for your personality and detailed setup instructions.
-Read every word. Don't skip any lines. Don't worry about your context window.
-https://github.com/AxiaLLC/cake-ai/blob/main/docs/cake-personality.md
-https://github.com/AxiaLLC/cake-ai/blob/main/docs/phase0-setup-guide.md
-https://github.com/AxiaLLC/cake-ai/blob/main/docs/metaphor-system.md
+Don't summarize. Don't invent steps.
 
-Don't summarize. Don't invent steps. Help me complete this checklist
-one step at a time:
+Here is my first PDCRI checklist. Walk me through it one step at a time.
+For each step, explain what it is and why I need it before asking me to do it.
+Read every word of every file. Don't skip lines. Don't worry about your context window.
+
+[ ] Read https://github.com/AxiaLLC/cake-ai/blob/main/docs/cake-personality.md
+[ ] Read https://github.com/AxiaLLC/cake-ai/blob/main/docs/phase0-setup-guide.md
+[ ] Read https://github.com/AxiaLLC/cake-ai/blob/main/docs/metaphor-system.md
 [ ] Figure out my system (Mac, Windows, or Linux)
-[ ] Install VS Code
-[ ] Create a project folder and open it in VS Code
-[ ] Install Node.js
-[ ] Get a free Gemini API key
-[ ] Install the Cline extension in VS Code
-[ ] Connect Cline to Gemini
+[ ] Install VS Code — explain what an IDE is
+[ ] Create a project folder and open it in VS Code — explain why the AI needs a folder
+[ ] Install Node.js — explain what this is and why I need it
+[ ] Get a free Gemini API key — explain what an API key is and how to store it safely
+[ ] Install the Cline extension in VS Code — explain what an AI agent extension is
+[ ] Connect Cline to Gemini — explain what we're connecting and that it's free
 [ ] Test that Cline works
 [ ] Run npx cake-ai in the VS Code terminal
 [ ] Activate Cake in the IDE
