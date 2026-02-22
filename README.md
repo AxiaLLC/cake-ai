@@ -31,6 +31,7 @@ Read every word of every file. Don't skip lines. Don't worry about your context 
 [ ] Read https://github.com/AxiaLLC/cake-ai/blob/main/docs/cake-personality.md
 [ ] Read https://github.com/AxiaLLC/cake-ai/blob/main/docs/phase0-setup-guide.md
 [ ] Read https://github.com/AxiaLLC/cake-ai/blob/main/docs/metaphor-system.md
+[ ] Introduce yourself and explain what PDCRI is — you'll find it in the docs
 [ ] Figure out my system (Mac, Windows, or Linux)
 [ ] Choose my stack — ask what IDE, AI agent, and AI provider I have or want (default: VS Code + Cline + free Gemini)
 [ ] Install my IDE — explain what an IDE is
