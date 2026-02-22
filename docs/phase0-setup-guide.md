@@ -77,24 +77,56 @@ At the time of writing, the download page auto-detects the user's OS and shows t
 
 ---
 
-## Step 3: Open a Folder in VS Code (BEFORE Cline)
+## Step 3: Create and Open a Folder in VS Code (BEFORE Cline)
 
 This step MUST happen before installing Cline. Cline needs a workspace folder to operate in.
 
-Guide the user to create and open a project folder:
+> "Before we install anything else, let's set up a home base — a folder on your computer where all your AI projects will live. Think of it like creating a workshop. The AI needs a room to work in. Right now it has no room."
 
-> "Before we install anything else, let's set up a home base. We need a folder on your computer where your projects will live."
+### Where to put it
 
-**Instructions:**
-1. Create a folder somewhere easy to find. Suggest: `Documents/cake-projects` or `Desktop/cake-projects`.
-   - **Mac:** Open Finder → Documents → right-click → New Folder → name it `cake-projects`
-   - **Windows:** Open File Explorer → Documents → right-click → New → Folder → name it `cake-projects`
-2. In VS Code: File → Open Folder → navigate to the folder you just created → Select/Open.
-3. VS Code may ask "Do you trust the authors of the files in this folder?" → Click "Yes, I trust the authors."
+Recommend creating the folder in the user's **home directory** so it's easy to find and doesn't get lost in random places. Suggest naming it something like `my-ide` or `ai-projects`.
+
+**Here's what the full path looks like on each system:**
+
+- **Mac:** `/Users/[their-name]/my-ide` — that's their home folder
+- **Windows:** `C:\Users\[their-name]\my-ide` — that's their home folder
+- **Linux:** `/home/[their-name]/my-ide` — that's their home folder
+
+### Creating the folder
+
+Walk them through it based on their system. Remember: they may never have created a folder from scratch before.
+
+**Mac:**
+1. Open **Finder** (the smiley face icon in the dock at the bottom of the screen).
+2. In the left sidebar, click on your name (or "Home" — it has a house icon). If you don't see it, click **Go** in the top menu bar → **Home**.
+3. You should see folders like Desktop, Documents, Downloads, etc. This is your home folder.
+4. Right-click in any empty space → **New Folder**. Name it `my-ide`.
+
+**Windows:**
+1. Open **File Explorer** (the folder icon in the taskbar at the bottom of the screen, or press the Windows key + E).
+2. In the left sidebar, click on **This PC**, then double-click your **C: drive**, then **Users**, then your **username**. You should see folders like Desktop, Documents, Downloads, etc. This is your home folder.
+3. Right-click in any empty space → **New** → **Folder**. Name it `my-ide`.
+
+**Alternative (simpler for some users):** If those instructions feel complicated, they can also create the folder on their **Desktop** — it's less ideal for long-term use but it works and they can move it later. What matters is that the folder exists and they can find it.
+
+### Opening the folder in VS Code
+
+1. Open VS Code.
+2. Click **File** in the top menu → **Open Folder** (on Mac it may say "Open...").
+3. Navigate to the `my-ide` folder you just created and select it. Click **Open** (or **Select Folder** on Windows).
+4. VS Code may show a dialog: "Do you trust the authors of the files in this folder?" → Click **Yes, I trust the authors.** (This is your own folder — it's safe.)
+
+### What they should see
+
+> "You should see the name of your folder — `my-ide` — in the top bar of VS Code, and on the left side there's a panel called Explorer that shows an empty folder. That's your workspace. This is where everything we build will live."
+
+If the Explorer panel isn't visible: click **View** → **Explorer**, or press Ctrl+Shift+E (Cmd+Shift+E on Mac).
 
 **Milestone:** VS Code shows the folder name in the top bar and the Explorer panel on the left shows an empty folder.
 
-**Why this matters:** Explain briefly: "This folder is your workspace. It's where the AI will read and write files. Without it, the AI has no kitchen to work in — it's just a voice on the phone."
+**Why this matters:**
+> "This folder is your workspace — it's the AI's kitchen. Everything we create, every plan we write, every project we build will live here. Without it, the AI has no place to work. It would be like calling someone on the phone but never letting them into your house — they can talk, but they can't actually do anything for you."
 
 ---
 

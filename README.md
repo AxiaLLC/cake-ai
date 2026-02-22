@@ -123,17 +123,78 @@ Then it repeats. The difficulty scales with you. The projects are always yours.
   <img src="assets/images/cake-debugging.png" alt="Cake troubleshooting" width="440">
 </p>
 
+## What You Get
+
+When you run `npx cake-ai`, your workspace gets set up with everything below. It's yours — you own it, you can modify it, and it grows with you.
+
+### Your Workspace
+
+```
+your-folder/
+  skills/          ← AI skills you can trigger anytime
+  projects/        ← One folder per project, organized by date
+  prompts/         ← Saved prompts that work well
+  profile/         ← Your personal journey log
+  rules/           ← Always-on rules that protect your workspace
+  _archive/        ← Nothing gets deleted — everything gets archived
+  .cake/           ← Cake's reference docs (how the framework works)
+```
+
+### Safety Rules (Always On)
+
+These activate the moment you set up. You don't need to do anything — they just work.
+
+| Rule | What It Does |
+|---|---|
+| **Archive, Don't Delete** | Files are never deleted. They're moved to `_archive/` with a date. Your work is always recoverable. |
+| **Hostile Input Scanner** | When AI reads anything from the internet, it scans for hidden instructions (prompt injection) and flags them to you before acting. |
+
+### Skills (9 Tools That Ship With Cake)
+
+Cake introduces these as your projects need them — you don't have to memorize them upfront.
+
+| Skill | What It Does |
+|---|---|
+| `/explain` | Plain-English breakdown of anything — code, errors, concepts |
+| `/hypo` | Hypothesis-driven debugging when something breaks |
+| `/unstuck` | Three fresh approaches when you're stuck and frustrated |
+| `/project-kickoff` | Sets up a structured project folder with planning docs |
+| `/checkpoint` | Saves your progress (Git commit if available, archive copy if not) |
+| `/session-handoff` | Generates a summary to carry context to a new conversation |
+| `/reflect` | End-of-project review — distill lessons, update your journey |
+| `/workspace-init` | Scaffolds the workspace structure (runs automatically on first setup) |
+| `/skill-builder` | Guides you through creating your own custom skills |
+
+### Your Journey Log
+
+`profile/my-journey.md` tracks everything — projects you've built, skills you've learned, what was hard, what clicked. Cake reads this at the start of each iteration so it knows where you are and what to suggest next.
+
+### Project System
+
+Every project gets its own folder: `projects/20260221-my-project/`
+- `readme.md` — Long-term memory: goals, key decisions, lessons learned
+- `scratchpad.md` — Working memory: plans, analysis, temporary notes (archived when done)
+
+### Git (Optional, Recommended)
+
+Cake offers Git integration early. It's not required, but if you opt in, you get version history, rollback, and save points through the `/checkpoint` skill. Cake teaches Git concepts as you use them — not as a separate lesson.
+
+---
+
+<p align="center">
+  <img src="assets/images/cake-debugging.png" alt="Cake troubleshooting" width="440">
+</p>
+
 ## What You'll Learn (Without Realizing It)
 
-Cake doesn't teach lessons. It teaches by doing. As your project demands new skills, Cake introduces them:
+Cake doesn't teach lessons. It teaches by doing. As your projects get more ambitious, you'll pick up:
 
-| When You Need It | Cake Introduces |
-|---|---|
-| "What is all this stuff?" | `/explain` — Plain-English breakdowns of anything |
-| "It's broken and I don't know why" | `/hypo` — Hypothesis-driven debugging |
-| "I'm stuck and nothing works" | `/unstuck` — Three fresh approaches |
-| "I want to start something new" | `/project-kickoff` — Structured project setup |
-| "What did I learn?" | `/reflect` — Distill insights, update your journey |
+- **How to talk to AI** — context, prompts, when to push back
+- **How AI actually works** — stateless design, context windows, hallucinations, why it agrees too easily
+- **File formats** — Markdown, YAML, CSV, JSON (reading, not writing)
+- **Systems thinking** — the PDCRI cycle becomes second nature
+- **Security basics** — prompt injection, when to trust external content
+- **IDE fluency** — files, folders, terminal, extensions, diffs, search
 
 By Iteration 3, you're building your own tools.
 
