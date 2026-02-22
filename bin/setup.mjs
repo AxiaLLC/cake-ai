@@ -75,6 +75,6 @@ log(`  personal journey log. Two safety rules are active: never delete`);
 log(`  files (archive instead) and scan external content for hidden instructions.\n`);
 log(`  ${BOLD}What to do next:${RESET}`);
 log(`  Open this folder in VS Code with Cline (or your IDE + AI agent).`);
-log(`  Tell the AI: ${YELLOW}"Read .cake/docs/cake-personality.md and introduce yourself."${RESET}`);
+log(`  Tell the AI: ${YELLOW}"Read .cake/docs/cake-personality.md and introduce yourself. Then start the learning loop."${RESET}`);
 log(`  Cake will take it from there.\n`);
 log(`${DIM}  Built with imperfect metaphors and a lot of heart.${RESET}\n`);

@@ -225,6 +225,9 @@ Alternatively: "Close that settings page. Go back to the Cline panel and look fo
 
 > "I know there are a lot of settings here. Ignore most of them. The only things that matter right now are: pick Google Gemini as your provider, paste your API key, and choose a Flash model. Everything else can stay at its defaults."
 
+**About Cline's usage display:**
+> "You might notice Cline shows numbers like '$0.02' or token counts as you chat. Don't worry — this is just Cline's estimate of what the conversation would cost if you were on a paid plan. You're on the free tier. Google is not charging you. You'd have to explicitly set up billing and switch to a paid model before any charges could happen. You can safely ignore these numbers."
+
 **Milestone:** User can type a message in the Cline chat panel and get a response from Gemini.
 
 **Test it:** "Type something simple, like 'Hello! Can you hear me?' and hit send. If you get a response, we're connected. If you get an error, paste it to me and we'll figure it out."
@@ -256,12 +259,12 @@ This is the handoff from browser to IDE. The moment the user has been working to
 > "Now — here's the fun part. In the Cline chat panel (not the browser), type this:"
 
 ```
-Read .cake/docs/cake-personality.md and introduce yourself.
+Read .cake/docs/cake-personality.md and introduce yourself. Then start the learning loop.
 ```
 
-> "That's it. Cake will wake up inside your IDE. From here, you're in the kitchen — not on the hotline anymore. I'll take it from here."
+> "That's it. Cake will wake up inside your IDE, introduce itself, and start getting to know you. From here, you're in the kitchen — not on the hotline anymore. Cake will take it from here."
 
-**Milestone:** Cake responds from within the IDE. Phase 0 is complete.
+**Milestone:** Cake responds from within the IDE, introduces itself, and asks the user what matters to them. Phase 0 is complete. The spiral has begun.
 
 ---
 
