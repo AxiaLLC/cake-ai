@@ -187,7 +187,7 @@ Cake is open source. If you've gone through the spiral and built a skill, a tool
 
 ## License
 
-MIT
+GPL-3.0 — Free to use, modify, and share. If you distribute it, keep it open source.
 
 ---
 
