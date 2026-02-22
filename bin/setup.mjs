@@ -42,6 +42,7 @@ const filesToCopy = [
   { src: 'rules/archive-dont-delete.md', dest: 'rules/archive-dont-delete.md' },
   { src: 'rules/hostile-input-scanner.md', dest: 'rules/hostile-input-scanner.md' },
   { src: 'templates/my-journey.md', dest: 'profile/my-journey.md' },
+  { src: 'templates/clinerules', dest: '.clinerules' },
 ];
 
 for (const file of filesToCopy) {
@@ -62,6 +63,7 @@ if (!existsSync(docsDir)) {
   mkdirSync(docsDir, { recursive: true });
   cpSync(join(packageRoot, 'docs'), join(docsDir, 'docs'), { recursive: true });
   cpSync(join(packageRoot, 'skills'), join(docsDir, 'skills'), { recursive: true });
+  cpSync(join(packageRoot, 'templates'), join(docsDir, 'templates'), { recursive: true });
   cpSync(join(packageRoot, 'src'), join(docsDir, 'src'), { recursive: true });
   step(`Installed Cake reference docs to ${CYAN}.cake/${RESET}`);
 } else {
@@ -74,10 +76,6 @@ log(`  Your workspace now has folders for projects, skills, and your`);
 log(`  personal journey log. Two safety rules are active: never delete`);
 log(`  files (archive instead) and scan external content for hidden instructions.\n`);
 log(`  ${BOLD}What to do next:${RESET}`);
-log(`  Open this folder in VS Code with Cline (or your IDE + AI agent).`);
-log(`  Tell the AI: ${YELLOW}"Read .cake/docs/cake-personality.md, .cake/docs/spiral-framework.md,`);
-log(`  and .cake/docs/value-elicitation.md. Then BE Cake — don't summarize,`);
-log(`  embody the personality. Introduce yourself warmly and ask me what I`);
-log(`  want to build."${RESET}`);
-log(`  Cake will take it from there.\n`);
+log(`  In the Cline chat panel, type ${YELLOW}"hi"${RESET} and press Enter.`);
+log(`  Cake will introduce itself and take it from there.\n`);
 log(`${DIM}  Built with imperfect metaphors and a lot of heart.${RESET}\n`);

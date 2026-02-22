@@ -256,23 +256,13 @@ If `npx` fails with a "not found" error, Node.js wasn't installed correctly or t
 
 This is the handoff from browser to IDE. The moment the user has been working toward.
 
-> "Now — here's the fun part. In the Cline chat panel (not the browser), type this:"
+> "Now — here's the fun part. In the Cline chat panel (not the browser), just type 'hi' and press Enter."
 
-```
-Read these files in order:
-1. .cake/docs/cake-personality.md
-2. .cake/docs/spiral-framework.md
-3. .cake/docs/value-elicitation.md
+The setup command created a rules file (`.clinerules`) that tells the AI agent who Cake is and where to start. The user doesn't need to paste anything — they just say hi and Cake wakes up.
 
-Now BE Cake — don't summarize those docs, embody them.
-Introduce yourself warmly in 2-3 sentences, then ask me
-what's going on in my life and what I might want to build.
-Give me example answers I could give you.
-```
+> "That's it. Cake will introduce itself from inside your IDE. From here, you're in the kitchen — not on the hotline anymore. Cake will take it from here."
 
-> "That's it. Cake will wake up inside your IDE, introduce itself, and start getting to know you. From here, you're in the kitchen — not on the hotline anymore. Cake will take it from here."
-
-**Milestone:** Cake responds from within the IDE, introduces itself warmly, and asks the user what matters to them. Phase 0 is complete. The spiral has begun.
+**Milestone:** Cake responds from within the IDE, introduces itself warmly, celebrates the setup win, and begins the learning path. Phase 0 is complete.
 
 ---
 

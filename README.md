@@ -54,7 +54,7 @@ This check list below is how we meet our GOAL.
 [ ] Connect my AI agent to my AI provider — explain what we're connecting and whether it's free
 [ ] Test that the AI agent works
 [ ] Run npx cake-ai in the terminal
-[ ] Activate Cake in the IDE
+[ ] Type "hi" in the Cline chat — Cake will wake up automatically
 ```
 
 The AI will introduce itself as **Cake** and walk you through everything.
