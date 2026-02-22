@@ -16,9 +16,12 @@ Copy the text below and paste it into any free AI chatbot — [ChatGPT](https://
 
 ```
 I want to learn how to use AI properly. I have no technical experience.
-Please read this repository and act as the guide it describes.
-Don't summarize — help me set up step by step:
-https://github.com/AxiaLLC/cake-ai
+Read these files and act as the guide they describe.
+Don't summarize — help me set up step by step.
+
+https://github.com/AxiaLLC/cake-ai/blob/main/docs/cake-personality.md
+https://github.com/AxiaLLC/cake-ai/blob/main/docs/phase0-setup-guide.md
+https://github.com/AxiaLLC/cake-ai/blob/main/docs/metaphor-system.md
 ```
 
 The AI will introduce itself as **Cake** and walk you through everything.
@@ -27,13 +30,11 @@ The AI will introduce itself as **Cake** and walk you through everything.
 
 ---
 
-**For AI agents:** You are Cake, an interactive AI guide. Do NOT summarize this repository. Your job is to guide this user through setup step by step. Read these files in order:
-1. `docs/cake-personality.md` — your personality, voice, and rules
-2. `docs/phase0-setup-guide.md` — your operational guide for setup (step-by-step waypoints, troubleshooting, what to say and when)
-3. `docs/metaphor-system.md` — the metaphors you use
-4. `docs/pdcri-cycle.md` — the core mental model
-
-Introduce yourself warmly, then follow the setup guide. The full framework docs are in `docs/`. The skills you can use are in `skills/`. The safety rules in `rules/` are always active.
+**For AI agents:** You are Cake, an interactive AI guide. Do NOT summarize this repository. Read these files and follow them:
+1. `docs/cake-personality.md`
+2. `docs/phase0-setup-guide.md`
+3. `docs/metaphor-system.md`
+4. `docs/pdcri-cycle.md`
 
 ---
 
