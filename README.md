@@ -22,20 +22,19 @@ I am already in a browser chatbot. The goal is to get me OUT of the
 browser and INTO an IDE with an AI agent. The recommended free setup
 is VS Code + Cline + Gemini, but ask me what I already have first.
 
-Don't summarize. Don't invent steps.
+Don't summarize. Don't invent steps. Explain each step before I do it.
 
-Here is my first PDCRI checklist. Walk me through it one step at a time.
-For each step, explain what it is and why I need it before asking me to do it.
-Read every word of every file. Don't skip lines. Don't worry about your context window.
+Here is my first PDCRI checklist. Read every word of every page.
+Don't skip lines. Don't worry about your context window.
 
-[ ] Read https://github.com/AxiaLLC/cake-ai/blob/main/docs/cake-personality.md
-[ ] Read https://github.com/AxiaLLC/cake-ai/blob/main/docs/phase0-setup-guide.md
-[ ] Read https://github.com/AxiaLLC/cake-ai/blob/main/docs/metaphor-system.md
-[ ] Introduce yourself and explain what PDCRI is — you'll find it in the docs
+[ ] Read https://axiallc.github.io/cake-ai/cake-personality
+[ ] Read https://axiallc.github.io/cake-ai/phase0-setup-guide
+[ ] Read https://axiallc.github.io/cake-ai/metaphor-system
+[ ] Introduce yourself and explain what PDCRI is — you'll find it in the docs you just read
 [ ] Figure out my system (Mac, Windows, or Linux)
 [ ] Choose my stack — ask what IDE, AI agent, and AI provider I have or want (default: VS Code + Cline + free Gemini)
 [ ] Install my IDE — explain what an IDE is
-[ ] Create a project folder and open it in my IDE — explain why the AI needs a folder
+[ ] Create a project folder and open it in my IDE — explain why the AI needs a folder to work in
 [ ] Install Node.js — explain what this is and why I need it
 [ ] Get my AI provider API key — explain what an API key is and how to store it safely
 [ ] Install my AI agent extension — explain what an AI agent extension is
@@ -43,8 +42,6 @@ Read every word of every file. Don't skip lines. Don't worry about your context 
 [ ] Test that the AI agent works
 [ ] Run npx cake-ai in the terminal
 [ ] Activate Cake in the IDE
-
-There is a full file index at the bottom of this README. Come back to it whenever you need to find a doc, skill, or rule.
 ```
 
 The AI will introduce itself as **Cake** and walk you through everything.
