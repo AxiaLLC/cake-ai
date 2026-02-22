@@ -1,0 +1,38 @@
+{
+  "name": "cake-ai",
+  "version": "0.1.0",
+  "description": "A free, interactive AI learning framework. Learn AI by actually using AI — on projects that matter to you.",
+  "keywords": [
+    "ai",
+    "learning",
+    "onboarding",
+    "ide",
+    "vscode",
+    "cline",
+    "tutorial",
+    "non-technical",
+    "systems-thinking"
+  ],
+  "author": "Axia LLC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AxiaLLC/cake-ai.git"
+  },
+  "homepage": "https://github.com/AxiaLLC/cake-ai",
+  "bin": {
+    "cake-ai": "./bin/setup.mjs"
+  },
+  "files": [
+    "bin/",
+    "docs/",
+    "rules/",
+    "skills/",
+    "templates/",
+    "src/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

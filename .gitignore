@@ -1,0 +1,8 @@
+_bmad/
+_bmad-output/
+.cursor/
+.DS_Store
+.env
+.env.*
+node_modules/
+*.log
