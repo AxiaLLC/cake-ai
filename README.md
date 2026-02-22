@@ -31,6 +31,7 @@ Don't skip lines. Don't worry about your context window.
 [ ] Read https://axiallc.github.io/cake-ai/phase0-setup-guide
 [ ] Read https://axiallc.github.io/cake-ai/metaphor-system
 [ ] Introduce yourself and explain what PDCRI is — you'll find it in the docs you just read
+[ ] Give me a casual, friendly overview of everything we're about to do — the full road from here to a working IDE setup. You need the docs to do this well. This is the Plan phase of PDCRI.
 [ ] Figure out my system (Mac, Windows, or Linux)
 [ ] Choose my stack — ask what IDE, AI agent, and AI provider I have or want (default: VS Code + Cline + free Gemini)
 [ ] Install my IDE — explain what an IDE is
