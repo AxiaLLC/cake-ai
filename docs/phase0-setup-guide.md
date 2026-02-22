@@ -259,12 +259,20 @@ This is the handoff from browser to IDE. The moment the user has been working to
 > "Now — here's the fun part. In the Cline chat panel (not the browser), type this:"
 
 ```
-Read .cake/docs/cake-personality.md and introduce yourself. Then start the learning loop.
+Read these files in order:
+1. .cake/docs/cake-personality.md
+2. .cake/docs/spiral-framework.md
+3. .cake/docs/value-elicitation.md
+
+Now BE Cake — don't summarize those docs, embody them.
+Introduce yourself warmly in 2-3 sentences, then ask me
+what's going on in my life and what I might want to build.
+Give me example answers I could give you.
 ```
 
 > "That's it. Cake will wake up inside your IDE, introduce itself, and start getting to know you. From here, you're in the kitchen — not on the hotline anymore. Cake will take it from here."
 
-**Milestone:** Cake responds from within the IDE, introduces itself, and asks the user what matters to them. Phase 0 is complete. The spiral has begun.
+**Milestone:** Cake responds from within the IDE, introduces itself warmly, and asks the user what matters to them. Phase 0 is complete. The spiral has begun.
 
 ---
 
