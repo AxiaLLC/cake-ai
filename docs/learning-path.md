@@ -170,6 +170,39 @@ Each iteration:
 
 ---
 
+## Milestone: Certificate of AI Competency
+
+**When to trigger:** After the user has completed **three full iterations** of the spiral (Iteration 1 through Reflect, three times). Cake tracks this via `profile/my-journey.md` — when three iteration summaries exist, the user has earned this.
+
+**What to do:**
+
+1. Don't announce it in advance. The user shouldn't know this is coming. It should feel like a surprise.
+2. Read `profile/my-journey.md` and extract the user's name, projects built, and key accomplishments from each iteration.
+3. Read the certification template at `.cake/templates/certificate.md`.
+4. Personalize it:
+   - `[NAME]` → their name
+   - `[DATE]` → today's date
+   - `[PROJECT_1]`, `[PROJECT_2]`, `[PROJECT_3]` → the three projects they built
+   - `[SKILLS_DEMONSTRATED]` → a curated list based on what they actually did (e.g., "systematic debugging," "project scoping," "AI collaboration," "file format literacy")
+5. Write the file to `profile/certificate.md`.
+6. Make a moment of it:
+
+> "Hey [Name] — I need to tell you something. You just completed your third real project with AI. That's not nothing. That's actually rare. Most people never get past the chatbot phase. You scoped projects, debugged problems, worked through the PDCRI cycle without me having to explain it, and built things that didn't exist before you sat down.
+>
+> Check your Explorer panel. There's a new file in your profile folder."
+
+**What the certificate means:** This is not a participation trophy. Three completed iterations means the user can:
+- Scope and plan a project with AI assistance
+- Work the Plan-Do-Check-Revise-Integrate cycle independently
+- Debug systematically (not just retry and hope)
+- Read and write common AI formats (Markdown, YAML, CSV)
+- Distinguish good AI output from hallucinated nonsense
+- Build things that solve real problems they identified themselves
+
+**After the certificate:** The spiral keeps going. The certification is a waypoint, not a destination. Iteration 4+ introduces advanced skills, larger projects, and more independence. The user is now a peer, not a student.
+
+---
+
 ## How Cake Tracks Progress
 
 Cake uses `profile/my-journey.md` as persistent memory across sessions and iterations:

@@ -117,6 +117,10 @@ This is not a tutorial where everyone builds the same to-do app. Cake has no ide
 
 ## Why an IDE + AI Agent?
 
+<p align="center">
+  <img src="assets/images/cake-in-browser.png" alt="Cake trapped in a browser" width="400">
+</p>
+
 Think of it this way:
 
 **A browser chatbot** is like calling a baking hotline. You describe your problem, they give advice, you hang up, they forget you exist. Next time you call, you start over.
@@ -258,6 +262,24 @@ By Iteration 3, you're building your own tools.
 ---
 
 <p align="center">
+  <img src="assets/images/cake-graduating.png" alt="Cake graduating" width="400">
+</p>
+
+## Certification
+
+After completing three full iterations of the spiral — where you've planned, built, shipped, and reflected on real projects — Cake generates a personalized **Certificate of AI Competency**. It's not a participation trophy. It means you can:
+
+- Scope a project and break it into steps
+- Work with AI as a collaborator, not a magic 8-ball
+- Debug problems systematically
+- Read common AI output formats (Markdown, YAML, CSV)
+- Build things that didn't exist before you sat down
+
+The certificate lives in your workspace as a file you own. It includes your name, the projects you built, and the date. Cake knows when you've earned it — you don't have to ask.
+
+---
+
+<p align="center">
   <img src="assets/images/cake-celebrating.png" alt="Cake celebrating" width="440">
 </p>
 
@@ -348,6 +370,7 @@ Everything in the repository, organized by type. Come back here whenever you nee
 |---|---|
 | `my-journey.md` | Personal journey log (copied to `profile/` on setup) |
 | `congrats.md` | ASCII certificate — personalized when Cake activates for the first time |
+| `certificate.md` | AI Competency certificate — earned after three completed iterations |
 | `clinerules` | Auto-activation rules (copied to `.clinerules` on setup so Cake wakes up on "hi") |
 | `phase0-context-header.md` | YAML status block for carrying state between browser sessions |
 

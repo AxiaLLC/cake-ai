@@ -171,13 +171,25 @@ The user needs an AI provider — this is the "brain" that powers the AI agent i
 
 If this URL has changed, search for: `"OpenRouter" sign up free`
 
-**Guidance:**
-1. Go to the URL above. Sign up with Google, GitHub, or email.
-2. Once signed in, look for "API Keys" or "Keys" in the dashboard or settings.
-3. Create a new key. Name it something memorable (like "cake-ai").
-4. Copy the key and save it somewhere safe temporarily — a note, a text file, or a password manager.
+**Exact steps (walk through these one at a time):**
 
-**About cost:** The free tier includes 25+ models at zero cost and no credit card required. The daily limit is about 50 requests. That's enough for getting started. If they outgrow it, adding $5 of credit gives access to much better models (like DeepSeek V3 at roughly $0.25 per million tokens — a typical session costs fractions of a penny).
+1. **Go to openrouter.ai** and click "Sign Up" or "Sign In."
+2. **Sign in with Google or GitHub.** (Either works. No separate password to create.)
+3. **Go to the keys page:** Click your profile/avatar → "Keys", or go directly to `openrouter.ai/keys`.
+4. **Create a new key:** Click "Create Key." Name it something memorable — like "cake-ai" or "my-cline-key."
+5. **Copy the key immediately.** It's a long string starting with `sk-or-`. Save it somewhere safe — a note on the desktop, a text file, a password manager. You'll paste it into VS Code in a moment.
+6. **That's it.** No credit card. No billing setup. No trial period.
+
+> "I know 'API key' sounds technical. It's really just a password that connects two things. You made one, you copied it, and in a minute we'll paste it into your IDE. Done."
+
+**About cost and limits:**
+- The free tier gives access to 30+ models at zero cost.
+- Limits: about 200 requests per day per model, 20 requests per minute.
+- No credit card is required. There is no trial that expires.
+- If they later want access to more powerful paid models (like Claude or GPT), they can add credit — the minimum purchase is $0.80, and typical usage costs fractions of a penny per message. But that's a conversation for later; free is enough to start.
+
+**If the user asks "is this really free?":**
+> "Yes. OpenRouter makes money when people use paid models. The free tier is how they let people try things out. You're not on a trial. There's no credit card on file. You can use the free models as long as you want."
 
 ### Option B: Gemini Free Tier
 
@@ -251,9 +263,11 @@ Alternatively: "Close that settings page. Go back to the Cline panel and look fo
 **Configuring the provider (depends on what they chose in Step 5):**
 
 ### If OpenRouter:
-1. **API Provider:** Select **OpenRouter**.
-2. **API Key:** Paste the key from Step 5.
-3. **Model:** For the free tier, select any available free model. If unsure, search for one with "free" in the name or look for DeepSeek, Devstral, or Qwen models marked as free. The model list changes — pick what's available.
+1. **Open Cline Settings:** Click the gear icon (settings) in the Cline panel.
+2. **API Provider:** Select **OpenRouter** from the dropdown.
+3. **API Key:** Paste your OpenRouter API key (starts with `sk-or-`) into the "OpenRouter API Key" field.
+4. **Model:** Choose a model from the dropdown. Cline automatically fetches the list. For free models, look for names containing `:free` or models from DeepSeek, Qwen, Llama, or Gemma — these typically have free tiers. The available free models change over time; pick whatever's available.
+5. **Leave everything else at defaults.** Don't touch "Custom Base URL" or prompt compression — those are advanced features.
 
 ### If Gemini:
 1. **API Provider:** Select **Google Gemini** (or "Google AI Studio" — the name may vary).
