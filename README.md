@@ -268,7 +268,7 @@ By Iteration 3, you're building your own tools.
 ---
 
 <p align="center">
-  <img src="assets/images/cake-celebrating.png" alt="Cake celebrating" width="440">
+  <img src="assets/images/cake-graduating.png" alt="Cake graduating" width="400">
 </p>
 
 ## Who Is This For?
