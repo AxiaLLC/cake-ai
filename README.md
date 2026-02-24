@@ -253,7 +253,7 @@ Cake offers Git integration early. It's not required, but if you opt in, you get
 ---
 
 <p align="center">
-  <img src="assets/images/cake-debugging.png" alt="Cake troubleshooting" width="600">
+  <img src="assets/images/cake-celebrating.png" alt="Cake celebrating" width="600">
 </p>
 
 ## What You'll Learn (Without Realizing It)
