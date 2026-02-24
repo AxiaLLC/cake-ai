@@ -38,6 +38,11 @@ Read every word of the page below. Don't skip lines.
 
 When all boxes are checked, tell me to come back here for Step 2.
 
+These checklist items are waypoints, not full instructions. Use your
+internet search to find current documentation for each step — URLs
+and interfaces change. If a step seems outdated, search for the
+latest version before guiding me.
+
 Only tell me things you know are 100% accurate.
 If you introduce a new technology, explain it in relatable terms.
 When I need to type something, show me exactly what to type and where.
@@ -72,6 +77,11 @@ a different setup or preference.
 [ ] Test that the AI agent works — have me send a test message
 [ ] Run npx cake-ai in the terminal — explain what this does
 [ ] Type "hi" in the Cline chat — Cake will wake up automatically
+
+These checklist items are waypoints, not full instructions. Use your
+internet search to find current documentation for each step — URLs
+and interfaces change. If a step seems outdated, search for the
+latest version before guiding me.
 
 Only tell me things you know are 100% accurate.
 When I need to type something, show me exactly what to type and where.
@@ -317,12 +327,9 @@ Everything in the repository, organized by type. Come back here whenever you nee
 | `pdcri-cycle.md` | The Plan-Do-Check-Revise-Integrate cycle |
 | `spiral-framework.md` | The repeatable learning cycle (Orient → Elicit → Scope → Build → Ship → Reflect) |
 | `design-tenets.md` | 12 governing principles for the framework |
-| `how-ai-works.md` | What users need to know about AI (limitations, context, security) |
-| `value-elicitation.md` | How to discover user values and scope right-sized projects |
-| `project-scoping.md` | Guidelines for sizing projects by iteration level |
+| `how-ai-works.md` | What users need to know about AI (limitations, context, security, output formats) |
+| `value-elicitation.md` | How to discover user values, scope right-sized projects, and size by iteration |
 | `skills-track.md` | Three tiers of IDE literacy (Survival → Competence → Power) |
-| `ai-output-literacy.md` | Common AI output formats (Markdown, YAML, CSV, JSON, Python) |
-| `browser-track.md` | Index of components that work in browser-only mode |
 
 ### Skills (`skills/`)
 | File | Trigger | Purpose |

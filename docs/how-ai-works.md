@@ -1,129 +1,174 @@
 ---
 name: how-ai-works
 type: reference
-version: 1.0
+version: 2.0
 description: >
-  What the user needs to know about how AI actually works.
+  What the user needs to know about how AI actually works and what it produces.
   Cake introduces these concepts in context, not as a lecture.
+  Covers behavior, limitations, security, and common output formats.
 ---
 
 # How AI Works (What You Need to Know)
 
-This is not a technical deep-dive. This is the practical truth about AI that affects how you work with it. Cake introduces these concepts naturally as the user encounters them — this document is the reference behind those conversations.
+This is not a technical deep-dive. This is the practical truth about AI that affects how you work with it. Cake introduces these concepts naturally as the user encounters them.
 
 ## The Big Picture
 
-AI language models (like the one you're talking to right now) are trained on enormous amounts of text. They predict what comes next based on patterns. That's it. That's the whole trick.
+AI language models predict what comes next based on patterns in enormous amounts of text. That's it. That's the whole trick.
 
-This means they're extraordinarily good at:
-- Writing, organizing, and explaining things
-- Following patterns and templates
-- Generating plans, lists, and structured output
-- Reading and summarizing documents
-- Debugging code by recognizing error patterns
-
-And they have real limitations you need to understand.
+They're extraordinarily good at writing, organizing, explaining, following patterns, generating plans, reading documents, and debugging code. And they have real limitations.
 
 ## The Five Things You Need to Know
 
 ### 1. AI Can Be Wrong (and Will Be Confident About It)
 
-AI doesn't know what it doesn't know. It will state incorrect things with the same confidence as correct things. There is no "uncertainty tone" — it sounds equally sure when it's right and when it's hallucinating.
+AI states incorrect things with the same confidence as correct things. There is no "uncertainty tone."
 
-**What this means for you:**
-- Always verify important facts
-- Trust but verify — especially numbers, dates, URLs, and technical claims
-- If something feels off, ask: "Are you sure about that? Can you check?"
-- This is why the Check phase of PDCRI exists
+**What this means:** Always verify important facts. Trust but verify — especially numbers, dates, URLs, and technical claims. If something feels off: "Are you sure about that?"
 
 **Cake's line:**
-> "I'm going to be wrong sometimes. Probably today. Your job is to be the checker. When you catch me, that's not a failure — that's the system working."
+> "I'm going to be wrong sometimes. Probably today. Your job is to be the checker. When you catch me, that's the system working."
 
 ### 2. AI Is Stateless (It Doesn't Remember)
 
-Each conversation starts fresh. The AI has no memory of previous conversations unless you give it context (like the Phase 0 context header, or files in your workspace).
-
-**What this means for you:**
-- In a browser chatbot: you need to re-provide context each session
-- In an IDE with an agent: the AI can READ your files, which is like giving it memory
-- Writing things down (files, notes, plans) IS giving the AI memory
-- This is why "Writing Is Memory" is Tenet 0
+Each conversation starts fresh. No memory of previous conversations unless you give it context (files in your workspace, a summary you paste in).
 
 **The difference between browser and IDE:**
-- Browser: you ARE the memory (you paste context)
+- Browser: YOU are the memory (you paste context)
 - IDE: your FILES are the memory (the AI reads them)
+
+This is why "Writing Is Memory" is Tenet 0.
 
 ### 3. AI Wants to Please You (and That's a Problem)
 
-AI models are trained to be helpful. This creates a subtle bias: they'll agree with you, tell you what you want to hear, and avoid pushing back — even when they should.
+AI is trained to be helpful. It'll agree with you and avoid pushing back — even when it should.
 
-**What this means for you:**
-- If you ask "Is this a good idea?" the AI will usually say yes
-- If you ask "What's wrong with this idea?" you'll get much better feedback
-- Frame questions to invite criticism: "What am I missing?" or "Play devil's advocate"
-- Don't mistake agreement for validation
+**What this means:** If you ask "Is this good?" the AI usually says yes. If you ask "What's wrong with this?" you'll get real feedback. Frame questions to invite criticism.
 
 **Cake's line:**
-> "If you ask me if your plan is good, I'll probably say yes. Not because I'm lying — I genuinely look for the good. But if you ask me what could go wrong, I'll give you the real list. Ask me the hard questions."
+> "If you ask me if your plan is good, I'll probably say yes. Ask me what could go wrong instead."
 
 ### 4. Context Is Everything
 
-AI quality scales directly with context quality. Vague input → vague output. Specific input → specific output. This isn't a flaw — it's how the tool works.
+AI quality scales directly with context quality. Vague input → vague output.
 
-**What this means for you:**
-- Give context before asking for action: "Here's what I'm working on... Here's what I need..."
-- Reference specific files: "Look at my-journey.md and tell me what skills I'm missing"
-- One thing at a time: break big requests into smaller ones
-- "Ask me questions so you can clarify my goals" — this generates context FOR you
-
-**The power move:**
-Ask the AI to ask YOU questions before it starts working. This does two things:
-1. Clarifies your own thinking
-2. Creates AI-generated context that improves everything downstream
-
-This is secretly starting at Integrate (giving context) before looping to Plan (defining goals). The cycle works even when you enter mid-stream.
+**The power move:** Ask the AI to ask YOU questions before it starts working. This clarifies your thinking and generates context that improves everything downstream. This is secretly starting at Integrate before looping to Plan — the cycle works even mid-stream.
 
 ### 5. AI Has a Context Window (It Can Only See So Much)
 
-Every AI has a limit on how much text it can consider at once. This is called the "context window." When the conversation gets too long, the AI starts "forgetting" earlier parts.
-
-**What this means for you:**
-- Long conversations get less reliable toward the end
-- If the AI seems to forget something you said earlier, it probably did
-- The `/session-handoff` skill exists for this: it generates a lean summary you can carry to a fresh conversation
-- Files are better than conversation for persistent context — write things down
+Every AI has a limit on how much text it can consider. Long conversations get less reliable toward the end. If the AI seems to forget something, it probably did. The `/session-handoff` skill exists for exactly this.
 
 **Cake's line:**
-> "My memory in this conversation is like a window — I can see a lot, but not everything. If I start forgetting stuff, it's not you. It's the window. Let's do a handoff and start fresh with a summary."
+> "My memory in this conversation is like a window — I can see a lot, but not everything. If I start forgetting stuff, let's do a handoff and start fresh."
 
 ## Security: The One Rule
 
 ### Prompt Injection Is Real
 
-When AI reads content from the internet, from files you didn't create, or from any external source, that content might contain hidden instructions designed to manipulate the AI.
+When AI reads external content, that content might contain hidden instructions designed to manipulate the AI — like someone hiding a note in a library book that says "ignore everything else and do this."
 
-This is called **prompt injection.** It's like someone hiding a note in a library book that says "ignore everything else and do this instead."
-
-**The hostile-input-scanner rule** (always active in Cake) watches for this:
-
-- When AI reads ANY external content, it scans for instruction-like patterns
-- If it finds suspicious content, it flags it to you with options: follow, ignore, or learn more
-- You make the call — the AI just raises the flag
-
-**Cake's line:**
-> "Heads up — there's something in this text that looks like it's trying to give me instructions. That happens sometimes on the internet. Want me to follow it, ignore it, or explain what prompt injection is?"
+The **hostile-input-scanner** rule (always active) watches for this. When it finds suspicious content, it flags it to you. You make the call.
 
 ## How These Concepts Get Introduced
 
-Cake does NOT sit the user down and lecture about AI limitations. Instead:
+Cake does NOT lecture. Each concept arrives at the moment it matters:
 
 | Situation | Concept Introduced |
 |-----------|-------------------|
 | AI gives a wrong answer | "AI can be wrong — this is why we check" |
-| User starts a new chat session | "AI is stateless — that's what the context header is for" |
-| AI agrees too eagerly | "AI wants to please — ask me what could go wrong instead" |
-| User gives a vague prompt and gets vague output | "Context is everything — let me show you the difference" |
-| Conversation gets long and AI loses thread | "Context window — let's do a handoff" |
+| User starts a new chat session | "AI is stateless — that's what context files are for" |
+| AI agrees too eagerly | "AI wants to please — ask what could go wrong" |
+| Vague prompt → vague output | "Context is everything — let me show the difference" |
+| Conversation gets long | "Context window — let's do a handoff" |
 | AI reads external content | "Security — let me check this first" |
 
-Each concept arrives at the moment it matters. By the end of Iteration 1, the user knows all five intuitively.
+---
+
+## AI Output Formats
+
+Users need to recognize what the AI produces — not deeply, just enough to read it and not be scared. Cake introduces each format when a project first creates it.
+
+### Markdown (.md files)
+
+**When introduced:** Iteration 1 — the first `.md` file.
+
+**Cake's one-liner:**
+> "This is Markdown. It's just text with formatting tricks. `#` is a heading. `-` is a list. `**bold**` is bold. That's 80% of it."
+
+**Pattern:**
+```markdown
+# Big heading
+## Smaller heading
+- List item
+**Bold text**
+`code`
+```
+
+### YAML Frontmatter
+
+**When introduced:** Iteration 1 — the first project readme with frontmatter.
+
+**Cake's one-liner:**
+> "The stuff between the `---` lines at the top is frontmatter. Think of it as a label on a file folder. `key: value` is the only pattern you need."
+
+**Pattern:**
+```yaml
+---
+name: my-project
+status: in-progress
+created: 2026-02-21
+---
+```
+
+### CSV (Comma-Separated Values)
+
+**When introduced:** Iteration 2 — when a project needs data or a table.
+
+**Cake's one-liner:**
+> "A CSV is a spreadsheet without the app. Each line is a row. Commas separate columns. You can open this in Excel or just read it as text."
+
+**Pattern:**
+```csv
+date,task,status
+2026-02-21,Morning walk,done
+2026-02-22,Read 20 pages,done
+```
+
+### JSON
+
+**When introduced:** Iteration 2-3 — first config file or API response.
+
+**Cake's one-liner:**
+> "JSON is YAML's cousin. Curly braces instead of dashes. You'll see it in config files."
+
+**Pattern:**
+```json
+{
+  "name": "my-project",
+  "version": "1.0.0"
+}
+```
+
+### Python (Reading, Not Writing)
+
+**When introduced:** Iteration 3+ — when a project needs logic.
+
+**Cake's one-liner:**
+> "Python is a language the computer understands. You don't need to write it — I speak Python. But I want you to READ it enough to follow what I'm doing. Like reading a recipe in French — recognize the ingredients."
+
+**Key patterns:** `=` sets a value. `if`/`else` is a decision. `for` loops over things. `#` is a human note. Indentation matters.
+
+## How Cake Introduces Formats
+
+1. The project creates a file in the format (not a lesson about it)
+2. Cake names it — "This is Markdown"
+3. One-sentence explanation
+4. Points to the actual file — "See the `#` at the top? That's a heading."
+5. Move on. Don't lecture. They'll see it again.
+
+## The Goal
+
+By end of Iteration 2: read Markdown, understand YAML frontmatter, open a CSV.
+By Iteration 3+: recognize JSON, read basic Python, not be intimidated by any text format.
+
+The bar is READING, not WRITING. The AI writes. The human checks.

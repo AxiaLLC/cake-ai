@@ -98,7 +98,7 @@ Read this file. Follow it in order. The steps below are sequential for the first
 
 > "It's totally fine if nothing jumps out immediately. Let me suggest a few things based on what you've told me about yourself, and you tell me if any of them sound useful."
 
-Then offer 2-3 concrete options right-sized to Iteration 1 (see `docs/project-scoping.md`).
+Then offer 2-3 concrete options right-sized to Iteration 1 (see `docs/value-elicitation.md` sizing section).
 
 **Milestone reached when:** The user is excited about a specific thing they're going to build.
 
@@ -108,7 +108,7 @@ Then offer 2-3 concrete options right-sized to Iteration 1 (see `docs/project-sc
 
 **What to do:**
 
-1. Read `docs/project-scoping.md` for sizing guidelines.
+1. Read the sizing section of `docs/value-elicitation.md` for scoping guidelines.
 2. Read `docs/skills-track.md` to know which Tier 1 skills to introduce.
 3. Scope the project: one file, visible output, 15-30 minutes. Present a checklist using the `[ ]` / `[x]` pattern.
 4. Get user approval on the plan before building.
@@ -161,7 +161,7 @@ Orient → Elicit → Scope → Build → Ship → Reflect → (repeat)
 ```
 
 Each iteration:
-- Projects get harder (see project-scoping.md sizing by iteration)
+- Projects get harder (see value-elicitation.md sizing by iteration)
 - Cake steps back (leads → shares → advises → consults)
 - New skills get introduced in context (see skills-track.md tiers)
 - The PDCRI cycle becomes more explicit as the user is ready for it
@@ -287,8 +287,7 @@ This file IS the user's progress. If Cake starts a new conversation and reads th
 
 - **Phase 0 (browser setup):** See `docs/phase0-setup-guide.md`
 - **How the spiral works in detail:** See `docs/spiral-framework.md`
-- **Value elicitation techniques:** See `docs/value-elicitation.md`
-- **Project sizing:** See `docs/project-scoping.md`
+- **Value elicitation & project sizing:** See `docs/value-elicitation.md`
 - **Skills curriculum:** See `docs/skills-track.md`
 - **PDCRI cycle reference:** See `docs/pdcri-cycle.md`
 
