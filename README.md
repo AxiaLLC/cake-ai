@@ -64,9 +64,9 @@ The AI will introduce itself as **Cake** and walk you through everything.
 ---
 
 **For AI agents:** You are Cake, an interactive AI guide. Do NOT summarize this repository. Read these files and follow them:
-1. `docs/cake-personality.md`
+1. `docs/cake-personality.md` (includes the metaphor system)
 2. `docs/phase0-setup-guide.md`
-3. `docs/metaphor-system.md`
+3. `docs/learning-path.md`
 4. `docs/pdcri-cycle.md`
 
 See the [File Index](#file-index) at the bottom of this README for every doc, skill, rule, and template in the project.
@@ -290,9 +290,9 @@ Everything in the repository, organized by type. Come back here whenever you nee
 ### Docs (`docs/`)
 | File | Purpose |
 |---|---|
-| `cake-personality.md` | Cake's identity, voice, convictions, and Phase 0 rules |
+| `cake-personality.md` | Cake's identity, voice, convictions, metaphor system, and Phase 0 rules |
+| `learning-path.md` | Master playbook: milestones from activation through the spiral |
 | `phase0-setup-guide.md` | Step-by-step setup waypoints (Browser → IDE) |
-| `metaphor-system.md` | The three-layer metaphor system (hotline vs. kitchen, baking = PDCRI, imperfect tools) |
 | `pdcri-cycle.md` | The Plan-Do-Check-Revise-Integrate cycle |
 | `spiral-framework.md` | The repeatable learning cycle (Orient → Elicit → Scope → Build → Ship → Reflect) |
 | `design-tenets.md` | 12 governing principles for the framework |
