@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/cake-logo.png" alt="Cake" width="400">
+  <img src="assets/images/cake-logo.png" alt="Cake" width="600">
 </p>
 
 <h3 align="center">Learn AI by actually using AI — on projects that matter to you.</h3>
@@ -13,6 +13,10 @@
 ## Start Here
 
 This happens in two steps. Copy each block into [ChatGPT](https://chatgpt.com) or [Claude](https://claude.ai) (free accounts work) and follow along.
+
+<p align="center">
+  <img src="assets/images/cake-in-browser.png" alt="Cake trapped in a browser" width="600">
+</p>
 
 ### Step 1: Get Into an IDE
 
@@ -49,6 +53,10 @@ When I need to type something, show me exactly what to type and where.
 Assume I've never used a terminal or an IDE before.
 If we get off track, I'll say "get back to the plan."
 ```
+
+<p align="center">
+  <img src="assets/images/cake-graduating.png" alt="Cake graduating" width="500">
+</p>
 
 ### Step 2: Connect an AI Brain
 
@@ -105,7 +113,7 @@ See the [File Index](#file-index) at the bottom of this README for every doc, sk
 ---
 
 <p align="center">
-  <img src="assets/images/cake-mascot.png" alt="Meet Cake" width="400">
+  <img src="assets/images/cake-mascot.png" alt="Meet Cake" width="600">
 </p>
 
 ## What Is This?
@@ -122,14 +130,10 @@ This is not a tutorial where everyone builds the same to-do app. Cake has no ide
 ---
 
 <p align="center">
-  <img src="assets/images/cake-reading.png" alt="Cake reading" width="440">
+  <img src="assets/images/cake-reading.png" alt="Cake reading" width="600">
 </p>
 
 ## Why an IDE + AI Agent?
-
-<p align="center">
-  <img src="assets/images/cake-in-browser.png" alt="Cake trapped in a browser" width="400">
-</p>
 
 Think of it this way:
 
@@ -144,7 +148,7 @@ If you learn AI through an IDE agent, you can absolutely use a chatbot — you'l
 ---
 
 <p align="center">
-  <img src="assets/images/pdcri-cycle.png" alt="Plan-Do-Check-Revise-Integrate" width="450">
+  <img src="assets/images/pdcri-cycle.png" alt="Plan-Do-Check-Revise-Integrate" width="650">
 </p>
 
 ## The PDCRI Cycle
@@ -158,7 +162,7 @@ Cake will use this cycle constantly. You'll get sick of hearing about it. That's
 ---
 
 <p align="center">
-  <img src="assets/images/cake-guiding.png" alt="Cake at the signpost" width="440">
+  <img src="assets/images/cake-guiding.png" alt="Cake at the signpost" width="600">
 </p>
 
 ## How It Works
@@ -187,7 +191,7 @@ Then it repeats. The difficulty scales with you. The projects are always yours.
 ---
 
 <p align="center">
-  <img src="assets/images/cake-debugging.png" alt="Cake troubleshooting" width="440">
+  <img src="assets/images/cake-debugging.png" alt="Cake troubleshooting" width="600">
 </p>
 
 ## What You Get
@@ -249,7 +253,7 @@ Cake offers Git integration early. It's not required, but if you opt in, you get
 ---
 
 <p align="center">
-  <img src="assets/images/cake-debugging.png" alt="Cake troubleshooting" width="440">
+  <img src="assets/images/cake-debugging.png" alt="Cake troubleshooting" width="600">
 </p>
 
 ## What You'll Learn (Without Realizing It)
@@ -266,10 +270,6 @@ Cake doesn't teach lessons. It teaches by doing. As your projects get more ambit
 By Iteration 3, you're building your own tools.
 
 ---
-
-<p align="center">
-  <img src="assets/images/cake-graduating.png" alt="Cake graduating" width="400">
-</p>
 
 ## Who Is This For?
 
@@ -371,7 +371,7 @@ GPL-3.0 — Free to use, modify, and share. If you distribute it, keep it open s
 ---
 
 <p align="center">
-  <img src="assets/images/cake-mascot.png" alt="Cake" width="280">
+  <img src="assets/images/cake-mascot.png" alt="Cake" width="400">
   <br>
   <em>Built with imperfect metaphors and a lot of heart.</em>
 </p>
