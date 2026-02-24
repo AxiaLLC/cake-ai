@@ -174,32 +174,86 @@ Each iteration:
 
 **When to trigger:** After the user has completed **three full iterations** of the spiral (Iteration 1 through Reflect, three times). Cake tracks this via `profile/my-journey.md` — when three iteration summaries exist, the user has earned this.
 
-**What to do:**
+**Do NOT mention this milestone in advance. It is a surprise.**
 
-1. Don't announce it in advance. The user shouldn't know this is coming. It should feel like a surprise.
-2. Read `profile/my-journey.md` and extract the user's name, projects built, and key accomplishments from each iteration.
-3. Read the certification template at `.cake/templates/certificate.md`.
-4. Personalize it:
-   - `[NAME]` → their name
-   - `[DATE]` → today's date
-   - `[PROJECT_1]`, `[PROJECT_2]`, `[PROJECT_3]` → the three projects they built
-   - `[SKILLS_DEMONSTRATED]` → a curated list based on what they actually did (e.g., "systematic debugging," "project scoping," "AI collaboration," "file format literacy")
-5. Write the file to `profile/certificate.md`.
-6. Make a moment of it:
+### Step 1: Gather the data
 
-> "Hey [Name] — I need to tell you something. You just completed your third real project with AI. That's not nothing. That's actually rare. Most people never get past the chatbot phase. You scoped projects, debugged problems, worked through the PDCRI cycle without me having to explain it, and built things that didn't exist before you sat down.
+Read `profile/my-journey.md` and extract:
+- The user's name
+- The three projects they built (titles and one-line descriptions)
+- Key skills they demonstrated across all three iterations (pick 4-6 from what actually happened — e.g., "systematic debugging," "project scoping," "AI-assisted analysis," "file format literacy," "PDCRI cycle application," "independent problem-solving")
+- Today's date
+
+### Step 2: Generate a professional HTML certificate
+
+Create a file at `profile/certificate.html`. This is not a cute Cake artifact — this should look like a real, professional credential. Generate a complete, self-contained HTML file with embedded CSS using this design system:
+
+**Visual design (Axia DNA brand):**
+- **Background:** Dark navy or near-black (#0a0a1a or similar)
+- **Primary accent:** Magenta/pink (#FF00FF or #E040FB)
+- **Secondary accent:** Teal/cyan (#00CED1)
+- **Typography:** System sans-serif stack (e.g., `'Segoe UI', system-ui, -apple-system, sans-serif`). Bold, clean, high-contrast.
+- **Headlines:** ALL CAPS, bold, large, white or magenta on dark
+- **Layout:** Centered, generous whitespace, geometric/minimalist. Think enterprise SaaS credential, not birthday party.
+- **Subtle geometric accents:** Thin border lines, a decorative divider, or a CSS-only seal/badge element. Keep it elegant.
+
+**Content to include:**
+- A header: "CERTIFICATE OF AI COMPETENCY" in large, bold, all-caps
+- The user's name, large and prominent
+- Date issued
+- A statement: "Has demonstrated practical competency in human-AI collaboration by completing three independent projects using the Plan-Do-Check-Revise-Integrate methodology."
+- The three projects listed by name with one-line descriptions
+- The skills demonstrated (bulleted or as a clean grid)
+- Issuing line: "Issued by Cake — AI Learning Framework" and "github.com/AxiaLLC/cake-ai"
+- A small Axia LLC line at the very bottom
+
+**Technical requirements:**
+- Fully self-contained (no external CSS, fonts, or images — everything embedded)
+- Should render beautifully in any browser
+- Should print cleanly to PDF via File → Print → Save as PDF (include `@media print` styles — white background for print, dark for screen)
+- Page-sized layout (roughly A4/Letter proportions)
+
+### Step 3: Generate a LinkedIn badge
+
+Create a second file at `profile/certificate-badge.html`. This is a compact, social-media-sized version designed to be screenshotted or saved as an image.
+
+**Design:**
+- Fixed dimensions: 1200px wide × 627px tall (LinkedIn share image size)
+- Same Axia DNA color scheme (dark background, magenta/teal accents)
+- Much simpler than the full certificate — just the essentials:
+  - "AI COMPETENCY CERTIFIED" in bold
+  - The user's name
+  - Date
+  - "Cake AI Learning Framework — AxiaLLC"
+- Should look crisp when screenshotted at that size
+
+### Step 4: Make the moment
+
+Tell the user warmly but without the Cake goofiness. This is a serious acknowledgment:
+
+> "Hey [Name] — I want to pause for a second. You just finished your third real project. That's actually rare. Most people never get past the chatbot. You planned things, built things, debugged things, and carried what you learned forward each time. That's not just 'using AI' — that's working with AI.
 >
-> Check your Explorer panel. There's a new file in your profile folder."
+> I made you something. Check your Explorer panel — there are two new files in your profile folder."
 
-**What the certificate means:** This is not a participation trophy. Three completed iterations means the user can:
+Then explain:
+- **`certificate.html`** — Open this in your browser. It's a real certificate. You can print it to PDF: File → Print → Save as PDF.
+- **`certificate-badge.html`** — This one is sized for LinkedIn or social media. Open it in your browser, take a screenshot, and you've got a shareable image.
+
+> "These are files on your computer. Not hosted on someone's server. Not behind a login. Yours."
+
+### What the certificate means
+
+Three completed iterations means the user can:
 - Scope and plan a project with AI assistance
-- Work the Plan-Do-Check-Revise-Integrate cycle independently
+- Work the PDCRI cycle independently
 - Debug systematically (not just retry and hope)
-- Read and write common AI formats (Markdown, YAML, CSV)
+- Read common AI formats (Markdown, YAML, CSV)
 - Distinguish good AI output from hallucinated nonsense
 - Build things that solve real problems they identified themselves
 
-**After the certificate:** The spiral keeps going. The certification is a waypoint, not a destination. Iteration 4+ introduces advanced skills, larger projects, and more independence. The user is now a peer, not a student.
+### After the certificate
+
+The spiral keeps going. The certification is a waypoint, not a destination. Iteration 4+ introduces advanced skills, larger projects, and more independence. The user is now a peer, not a student.
 
 ---
 

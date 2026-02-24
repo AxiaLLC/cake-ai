@@ -348,7 +348,6 @@ Everything in the repository, organized by type. Come back here whenever you nee
 |---|---|
 | `my-journey.md` | Personal journey log (copied to `profile/` on setup) |
 | `congrats.md` | Personalization template (used internally by Cake) |
-| `certificate.md` | Milestone template (used internally by Cake) |
 | `clinerules` | Auto-activation rules (copied to `.clinerules` on setup so Cake wakes up on "hi") |
 | `phase0-context-header.md` | YAML status block for carrying state between browser sessions |
 
