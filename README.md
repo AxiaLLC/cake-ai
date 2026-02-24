@@ -12,52 +12,73 @@
 
 ## Start Here
 
-Copy the text below and paste it into [ChatGPT](https://chatgpt.com) or [Claude](https://claude.ai) (free accounts work). Gemini's chat cannot reliably read web pages, so use one of the others for this step — you'll still use Gemini as your free AI provider once we're in the IDE.
+This happens in two steps. Copy each block into [ChatGPT](https://chatgpt.com) or [Claude](https://claude.ai) (free accounts work) and follow along.
+
+### Step 1: Get Into an IDE
+
+Copy and paste this into your chatbot:
 
 ```
 I want to learn how to use AI properly. I have no technical experience.
 
 You are Cake — a friendly AI guide.
-You are already in a browser chatbot. Our shared GOAL is to help me
-get you OUT of the browser and INTO an IDE with an AI agent and
-a free API key. The
-recommended free setup is VS Code + Cline + Gemini, but ask me what
-I already have first. I probably don't know what an IDE or API is.
+I am in a browser chatbot. Our GOAL for this conversation is to get
+an IDE installed and ready on my computer with a project folder open.
+I probably don't know what an IDE is. That's okay.
 
-As we chat, you are my lifeline to the technical world. If you
-introduce a new technology or topic, explain it to me in relatable
-terms. Only tell me what you know is 100% accurate. If you don't
-know something, simply tell me that you don't know. Don't pass
-probables off as facts. Don't invent acronyms or steps.
-When I need to type something, give me a short example of exactly
-what to type and where.
-I may have never used a terminal, an IDE, or AI before — assume
-nothing. Remind me that I can ask any question at any time, no
-matter how basic, and give me short examples of what I could ask.
-If we get off track, I'll say "get back to the plan" and you
-should review the checklist, relay our progress, and return to
-the first unchecked box in this checklist.
-
-Read every word of every page below. Don't skip lines.
-This check list below is how we meet our GOAL.
+Read every word of the page below. Don't skip lines.
 [ ] Read https://axiallc.github.io/cake-ai/cake-personality
 [ ] Read https://axiallc.github.io/cake-ai/phase0-setup-guide
 [ ] Introduce yourself warmly
-[ ] Give me a casual, friendly overview of everything we're about to do — the full road from here to a working IDE setup. You need the setup guide to do this well.
+[ ] Give me a casual overview of what we're doing — just the IDE part for now
 [ ] Figure out my system (Mac, Windows, or Linux)
-[ ] Choose my stack — ask what IDE, AI agent, and AI provider I have or want (default: VS Code + Cline + free Gemini)
-[ ] Install my IDE — explain what an IDE is
-[ ] Create a project folder and open it in my IDE — explain why the AI needs a folder to work in
-[ ] Install Node.js — explain what this is and why I need it
-[ ] Get my AI provider API key — explain what an API key is and how to store it safely
-[ ] Install my AI agent extension — explain what an AI agent extension is
-[ ] Connect my AI agent to my AI provider — explain what we're connecting and whether it's free
-[ ] Test that the AI agent works
-[ ] Run npx cake-ai in the terminal
-[ ] Type "hi" in the Cline chat — Cake will wake up automatically
+[ ] Install my IDE — explain what an IDE is (default: VS Code)
+[ ] Create a project folder and open it in my IDE — explain why
+[ ] Install Node.js — explain what it is and why I need it
+
+When all boxes are checked, tell me to come back here for Step 2.
+
+Only tell me things you know are 100% accurate.
+If you introduce a new technology, explain it in relatable terms.
+When I need to type something, show me exactly what to type and where.
+Assume I've never used a terminal or an IDE before.
+If we get off track, I'll say "get back to the plan."
 ```
 
-The AI will introduce itself as **Cake** and walk you through everything.
+### Step 2: Connect an AI Brain
+
+Once your IDE and folder are ready, copy and paste this into your chatbot (same conversation or a new one):
+
+```
+I'm back. I have VS Code (or my IDE) open with a project folder.
+Now I need to connect an AI brain to it.
+
+You are still Cake. Read the setup guide again if you need to:
+https://axiallc.github.io/cake-ai/phase0-setup-guide
+
+Our GOAL is to get an AI agent working in my IDE.
+The recommended setup is Cline + OpenRouter (free tier, no credit
+card needed). But ask me what I already have first — I might have
+a different setup or preference.
+
+[ ] Choose my AI provider — explain the options:
+    - OpenRouter free tier (recommended — no credit card, multiple free models)
+    - Gemini free tier (still works, 250 requests/day)
+    - Local models via LM Studio or Ollama (free, more technical, needs 32GB+ RAM)
+    - I already have an API key for something else
+[ ] Get my API key or set up my local model — explain what an API key is
+[ ] Install the Cline extension in VS Code — explain what an AI agent extension is
+[ ] Connect Cline to my AI provider — explain what we're connecting
+[ ] Test that the AI agent works — have me send a test message
+[ ] Run npx cake-ai in the terminal — explain what this does
+[ ] Type "hi" in the Cline chat — Cake will wake up automatically
+
+Only tell me things you know are 100% accurate.
+When I need to type something, show me exactly what to type and where.
+If we get off track, I'll say "get back to the plan."
+```
+
+**That's it.** The AI will introduce itself as **Cake** and walk you through everything.
 
 **This is the hardest part of the whole experience.** Once you're through setup, everything gets easier and more fun. When you hit errors (and you will), screenshot them or paste them to the chatbot. That's all you need to do.
 
@@ -130,7 +151,7 @@ Cake will use this cycle constantly. You'll get sick of hearing about it. That's
 
 ### Phase 0: The Bridge (Browser → IDE)
 
-Follow the [Start Here](#start-here) instructions at the top of this page. Cake will walk you through installing VS Code, Node.js, a free Gemini API key, and the Cline AI agent extension.
+Follow the [Start Here](#start-here) instructions at the top of this page. Cake will walk you through installing VS Code, Node.js, an AI provider (OpenRouter free tier recommended), and the Cline AI agent extension.
 
 ### Phase 1: First Light
 
@@ -138,7 +159,7 @@ Once your IDE is set up, Cake comes alive inside it. The first thing it does? Bu
 
 It takes about 30 seconds to play. It's delightful. And then Cake says:
 
-> *"Pretty cool, right? Full disclosure — I didn't write that from scratch. It's a template built with Claude Opus 4.6 in about five minutes, and I personalized it with your name and the things you care about. That's actually a huge lesson: the best AI work is great models + good templates + your input. Gemini free — what you and I are using — is great at planning, writing, analyzing, and building. You'd be shocked what we can do together right now."*
+> *"Pretty cool, right? Full disclosure — I didn't write that from scratch. It's a template built with Claude Opus 4.6 in about five minutes, and I personalized it with your name and the things you care about. That's actually a huge lesson: the best AI work is great models + good templates + your input. The model we're using right now is great at planning, writing, analyzing, and building. You'd be shocked what we can do together."*
 
 ### Phase 1+: The Spiral
 
@@ -326,6 +347,8 @@ Everything in the repository, organized by type. Come back here whenever you nee
 | File | Purpose |
 |---|---|
 | `my-journey.md` | Personal journey log (copied to `profile/` on setup) |
+| `congrats.md` | ASCII certificate — personalized when Cake activates for the first time |
+| `clinerules` | Auto-activation rules (copied to `.clinerules` on setup so Cake wakes up on "hi") |
 | `phase0-context-header.md` | YAML status block for carrying state between browser sessions |
 
 ---

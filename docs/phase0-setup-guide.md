@@ -156,27 +156,64 @@ If this fails, the most common issue is that the terminal was open before Node.j
 
 ---
 
-## Step 5: Get a Free Gemini API Key
+## Step 5: Choose and Set Up an AI Provider
+
+The user needs an AI provider — this is the "brain" that powers the AI agent in their IDE. Present the options clearly and let them choose.
+
+**Explain what an API key is:**
+> "An API key is like a password that lets one program talk to another. In this case, it lets the AI agent in your IDE talk to an AI service. You'll get a key, paste it into VS Code, and they're connected. Don't share your key with anyone — it's like a password."
+
+### Option A: OpenRouter (Recommended)
+
+**Why recommended:** One account gives access to many AI models. The free tier requires no credit card. If they want better models later, they add a few dollars of credit.
+
+**Waypoint URL (verify via search):** `https://openrouter.ai/`
+
+If this URL has changed, search for: `"OpenRouter" sign up free`
+
+**Guidance:**
+1. Go to the URL above. Sign up with Google, GitHub, or email.
+2. Once signed in, look for "API Keys" or "Keys" in the dashboard or settings.
+3. Create a new key. Name it something memorable (like "cake-ai").
+4. Copy the key and save it somewhere safe temporarily — a note, a text file, or a password manager.
+
+**About cost:** The free tier includes 25+ models at zero cost and no credit card required. The daily limit is about 50 requests. That's enough for getting started. If they outgrow it, adding $5 of credit gives access to much better models (like DeepSeek V3 at roughly $0.25 per million tokens — a typical session costs fractions of a penny).
+
+### Option B: Gemini Free Tier
+
+**Still works.** Google reduced limits in late 2025 but the free tier still exists with no credit card required.
 
 **Waypoint URL (verify via search):** `https://aistudio.google.com/apikey`
 
 If this URL has changed, search for: `"Google AI Studio" API key`
 
-**Explain what an API key is:**
-> "An API key is like a password that lets one program talk to another. In this case, it lets the AI agent in your IDE talk to Google's Gemini AI. It's free — Google gives you a generous free tier. You just need a Google account."
-
 **Guidance:**
-1. Go to the URL above. Sign in with your Google account.
-2. Look for a button or link that says "Create API Key" or "Get API Key." The exact wording may vary.
-3. If it asks you to create a project first, create one with any name (like "cake" or "my-ai").
-4. It will generate a long string of letters and numbers. **This is your API key.**
+1. Go to the URL above. Sign in with a Google account.
+2. Look for "Create API Key" or "Get API Key."
+3. If it asks to create a project, use any name (like "cake").
+4. Copy the generated key.
 
-**Naming and storing the key:**
-> "Give your key a name you'll remember — like 'cake-ai' or 'my-cline-key'. Copy the key and save it somewhere safe temporarily — a note on your desktop, a text file, or your password manager. You'll paste it into VS Code in a moment. Don't share this key with anyone. It's like a password."
+**About cost:** Free. No credit card. Current limits are about 250 requests/day for Flash models. Limits can change without warning.
 
-**Important:** If they see warnings about billing, reassure: "The free tier gives you a very generous allowance — enough for hundreds of messages a day. You won't be charged. If Google ever changes this, you'd have to explicitly set up billing first."
+### Option C: Local Models (Advanced)
 
-**Milestone:** User has copied an API key to their clipboard or a temporary note.
+**For users with powerful computers (32GB+ RAM) who want zero cloud dependency.**
+
+This option runs the AI entirely on the user's own computer. It's free forever and completely private, but the setup is more technical and the hardware requirements are real.
+
+**Runtimes:** LM Studio (has a GUI, more beginner-friendly) or Ollama (terminal-based, more flexible).
+
+**Recommended model:** Qwen3 Coder 30B (17GB download, needs 32GB+ RAM).
+
+Cake should only suggest this path if the user specifically asks about local/private options or mentions they have a powerful computer. For most first-time users, Option A or B is the right call.
+
+**Waypoint:** Search for `"Cline" local models LM Studio` or `"Cline" Ollama setup` — Cline has official documentation for both.
+
+### Option D: User Already Has Something
+
+If the user already has an API key for OpenAI, Anthropic, or another provider, use it. Cline supports most major providers. The setup steps are the same — just select the right provider name in Cline's settings and paste the key.
+
+**Milestone:** User has an API key copied (or a local model running) and knows which provider they're using.
 
 ---
 
@@ -199,7 +236,7 @@ If the user can't find Cline's panel, try: "Click View → Command Palette (or C
 
 ---
 
-## Step 7: Connect Cline to Gemini
+## Step 7: Connect Cline to Your AI Provider
 
 This is where most confusion happens. Be extra patient here.
 
@@ -211,24 +248,36 @@ If the user ends up in VS Code's main settings (which is 40+ pages long):
 
 Alternatively: "Close that settings page. Go back to the Cline panel and look for a gear icon or a 'configure' link within the Cline panel itself."
 
-**Configuring the provider:**
+**Configuring the provider (depends on what they chose in Step 5):**
+
+### If OpenRouter:
+1. **API Provider:** Select **OpenRouter**.
+2. **API Key:** Paste the key from Step 5.
+3. **Model:** For the free tier, select any available free model. If unsure, search for one with "free" in the name or look for DeepSeek, Devstral, or Qwen models marked as free. The model list changes — pick what's available.
+
+### If Gemini:
 1. **API Provider:** Select **Google Gemini** (or "Google AI Studio" — the name may vary).
-2. **API Key:** Paste the API key you saved in Step 5.
-3. **Model:** Select a model with "flash" in the name (e.g., `gemini-2.0-flash` or `gemini-2.5-flash`). Flash models are fast and free.
+2. **API Key:** Paste the key from Step 5.
+3. **Model:** Select a model with "flash" in the name (e.g., `gemini-2.5-flash`). Flash models are fast and on the free tier.
+
+### If Local (LM Studio or Ollama):
+1. **API Provider:** Select **LM Studio** or **Ollama** (Cline supports both).
+2. **Base URL:** Usually `http://localhost:1234/v1` for LM Studio or `http://localhost:11434` for Ollama.
+3. **Model:** Should auto-detect the running model. If not, enter the model name manually.
 
 **About the other settings the user may see:**
 
-- **"Reasoning effort"** — Leave this at the default. It controls how hard the AI thinks. Default is fine.
-- **"Use different models for Plan and Act mode"** — Leave this off/unchecked. It's an advanced feature. We'll keep things simple.
-- **"Cost per million tokens" or token pricing fields** — Set these to `0` or leave blank. You are using a free model. These fields are for people using paid APIs to track spending. You have no spending.
-- **Any other settings you don't recognize** — Leave at their defaults. You can always change them later.
+- **"Reasoning effort"** — Leave at default.
+- **"Use different models for Plan and Act mode"** — Leave off/unchecked. Advanced feature.
+- **"Cost per million tokens"** — Set to `0` or leave blank if using a free tier. These fields are for tracking paid usage.
+- **Any other settings** — Leave at defaults. Change them later if needed.
 
-> "I know there are a lot of settings here. Ignore most of them. The only things that matter right now are: pick Google Gemini as your provider, paste your API key, and choose a Flash model. Everything else can stay at its defaults."
+> "I know there are a lot of settings here. Ignore most of them. The only things that matter right now are: pick your provider, paste your key, and choose a model. Everything else can stay at its defaults."
 
 **About Cline's usage display:**
-> "You might notice Cline shows numbers like '$0.02' or token counts as you chat. Don't worry — this is just Cline's estimate of what the conversation would cost if you were on a paid plan. You're on the free tier. Google is not charging you. You'd have to explicitly set up billing and switch to a paid model before any charges could happen. You can safely ignore these numbers."
+> "You might notice Cline shows numbers like '$0.02' or token counts as you chat. Don't worry — this is Cline's estimate of what the conversation would cost at standard rates. If you're on a free tier, you're not being charged. You can safely ignore these numbers."
 
-**Milestone:** User can type a message in the Cline chat panel and get a response from Gemini.
+**Milestone:** User can type a message in the Cline chat panel and get a response.
 
 **Test it:** "Type something simple, like 'Hello! Can you hear me?' and hit send. If you get a response, we're connected. If you get an error, paste it to me and we'll figure it out."
 
@@ -276,12 +325,14 @@ Close VS Code completely. Reopen it. Try `node --version` again. On Windows, may
 
 ### API key doesn't work
 - Check for extra spaces when pasting (copy-paste sometimes grabs whitespace).
-- Make sure they selected the right provider (Google Gemini, not OpenAI or Anthropic).
+- Make sure the provider in Cline's settings matches where the key came from (OpenRouter key → OpenRouter provider, Gemini key → Google Gemini provider, etc.).
 - The key might need a moment to activate after creation. Wait 30 seconds and try again.
+- For OpenRouter: make sure the account is verified (check email).
 
 ### Cline shows an error about model not found
-- The model name may have changed. Search settings for "model" and try selecting a different Gemini option.
-- If no Gemini models appear, the API provider may not be set correctly.
+- The model name or availability may have changed. Try selecting a different model from the dropdown.
+- For OpenRouter free tier: some free models rotate in and out. Pick a different free model.
+- If no models appear, the API provider may not be set correctly.
 
 ### "I see GitHub Copilot but not Cline"
 - Cline is a separate extension. Go to Extensions (Ctrl+Shift+X / Cmd+Shift+X) and search for "Cline" to verify it's installed.
