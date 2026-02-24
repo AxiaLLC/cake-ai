@@ -159,11 +159,7 @@ Follow the [Start Here](#start-here) instructions at the top of this page. Cake 
 
 ### Phase 1: First Light
 
-Once your IDE is set up, Cake comes alive inside it. The first thing it does? Builds you a personalized 8-bit video game — a little platformer where the Cake character collects ingredients themed to things you care about.
-
-It takes about 30 seconds to play. It's delightful. And then Cake says:
-
-> *"Pretty cool, right? Full disclosure — I didn't write that from scratch. It's a template built with Claude Opus 4.6 in about five minutes, and I personalized it with your name and the things you care about. That's actually a huge lesson: the best AI work is great models + good templates + your input. The model we're using right now is great at planning, writing, analyzing, and building. You'd be shocked what we can do together."*
+Once your IDE is set up, Cake comes alive inside it. It gets to know you a little, then shows you what an AI agent can really do. We won't spoil it here.
 
 ### Phase 1+: The Spiral
 
@@ -262,24 +258,6 @@ By Iteration 3, you're building your own tools.
 ---
 
 <p align="center">
-  <img src="assets/images/cake-graduating.png" alt="Cake graduating" width="400">
-</p>
-
-## Certification
-
-After completing three full iterations of the spiral — where you've planned, built, shipped, and reflected on real projects — Cake generates a personalized **Certificate of AI Competency**. It's not a participation trophy. It means you can:
-
-- Scope a project and break it into steps
-- Work with AI as a collaborator, not a magic 8-ball
-- Debug problems systematically
-- Read common AI output formats (Markdown, YAML, CSV)
-- Build things that didn't exist before you sat down
-
-The certificate lives in your workspace as a file you own. It includes your name, the projects you built, and the date. Cake knows when you've earned it — you don't have to ask.
-
----
-
-<p align="center">
   <img src="assets/images/cake-celebrating.png" alt="Cake celebrating" width="440">
 </p>
 
@@ -369,8 +347,8 @@ Everything in the repository, organized by type. Come back here whenever you nee
 | File | Purpose |
 |---|---|
 | `my-journey.md` | Personal journey log (copied to `profile/` on setup) |
-| `congrats.md` | ASCII certificate — personalized when Cake activates for the first time |
-| `certificate.md` | AI Competency certificate — earned after three completed iterations |
+| `congrats.md` | Personalization template (used internally by Cake) |
+| `certificate.md` | Milestone template (used internally by Cake) |
 | `clinerules` | Auto-activation rules (copied to `.clinerules` on setup so Cake wakes up on "hi") |
 | `phase0-context-header.md` | YAML status block for carrying state between browser sessions |
 
