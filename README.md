@@ -47,6 +47,9 @@ internet search to find current documentation for each step — URLs
 and interfaces change. If a step seems outdated, search for the
 latest version before guiding me.
 
+If I get stuck or can't find something, I'll take a screenshot and
+paste it here — you can see images.
+
 Only tell me things you know are 100% accurate.
 If you introduce a new technology, explain it in relatable terms.
 When I need to type something, show me exactly what to type and where.
@@ -91,6 +94,9 @@ internet search to find current documentation for each step — URLs
 and interfaces change. If a step seems outdated, search for the
 latest version before guiding me.
 
+If I get stuck or can't find something, I'll take a screenshot and
+paste it here — you can see images.
+
 Only tell me things you know are 100% accurate.
 When I need to type something, show me exactly what to type and where.
 If we get off track, I'll say "get back to the plan."
@@ -99,6 +105,8 @@ If we get off track, I'll say "get back to the plan."
 **That's it.** The AI will introduce itself as **Cake** and walk you through everything.
 
 **This is the hardest part of the whole experience.** Once you're through setup, everything gets easier and more fun. When you hit errors (and you will), screenshot them or paste them to the chatbot. That's all you need to do.
+
+**A note on screenshots in the IDE:** Once you're working with Cake inside Cline, you can paste screenshots into the Cline chat too. Whether the AI can read them depends on your model — paid and larger models handle images well, but some free models are text-only and can't see screenshots. If that happens, just describe what you see in words, or paste the error text. It still works.
 
 ---
 
