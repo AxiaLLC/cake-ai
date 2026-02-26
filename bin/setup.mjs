@@ -65,6 +65,7 @@ if (!existsSync(docsDir)) {
   cpSync(join(packageRoot, 'skills'), join(docsDir, 'skills'), { recursive: true });
   cpSync(join(packageRoot, 'templates'), join(docsDir, 'templates'), { recursive: true });
   cpSync(join(packageRoot, 'src'), join(docsDir, 'src'), { recursive: true });
+
   step(`Installed Cake reference docs to ${CYAN}.cake/${RESET}`);
 } else {
   info('.cake/ already exists — skipping reference docs');
